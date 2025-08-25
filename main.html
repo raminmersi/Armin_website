@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Armin Mersi</title>
+  <meta name="description" content="Independent artist & music producer. Emotional, mystical & electronic instrumental music.">
+  <meta name="theme-color" content="#0b0b0b" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Armin Mersi">
+  <meta property="og:description" content="Independent artist & music producer — mystical electronic soundscapes.">
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/25/25231.png" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root{
+      --bg: #0b0b0b;
+      --border: #1f2a32;
+      --text: #e7f6ff;
+      --muted: #97a8b0;
+      --link: #bff6ff;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      background: #0b0b0b;
+      color: var(--text);
+      font: 16px/1.6 system-ui, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, sans-serif;
+      color-scheme: dark;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(34px, 6vw, 60px);
+      letter-spacing: 2px;
+      font-weight: 800;
+      text-transform: uppercase;
+      text-shadow: 0 0 18px rgba(168,241,255,.18);
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 20px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      padding: 12px 18px;
+      border-radius: 30px;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 15px;
+      transition: 0.2s ease;
+    }
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: scale(1.05);
+    }
+    .contact {
+      margin-top: 30px;
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+    .contact a {
+      display: inline-block;
+      margin-top: 6px;
+      color: var(--link);
+      text-decoration: none;
+      font-size: 15px;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <h1>ARMIN MERSI</h1>
+
+  <div class="links">
+    <a class="btn" href="https://open.spotify.com/artist/5qRUkXYlPxBFBU7j8tugm6" target="_blank">
+      <i class="fab fa-spotify"></i> Spotify
+    </a>
+    <a class="btn" href="https://music.apple.com/tr/artist/armin-mersi/1523000484" target="_blank">
+      <i class="fab fa-apple"></i> Apple Music
+    </a>
+    <a class="btn" href="https://soundcloud.com/arminmersi" target="_blank">
+      <i class="fab fa-soundcloud"></i> SoundCloud
+    </a>
+    <a class="btn" href="https://arminmersi.bandcamp.com" target="_blank">
+      <i class="fab fa-bandcamp"></i> Bandcamp
+    </a>
+    <a class="btn" href="https://instagram.com/arminmersi" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a class="btn" href="https://x.com/arminmersi" target="_blank">
+      <i class="fab fa-x-twitter"></i> X
+    </a>
+    <a class="btn" href="https://www.youtube.com/@arminmersi" target="_blank">
+      <i class="fab fa-youtube"></i> YouTube
+    </a>
+  </div>
+
+  <div class="contact">
+    <p>For partnerships, collaborations, or any inquiries, feel free to get in touch:</p>
+    <a href="mailto:Arminmersi.official@gmail.com">
+      <i class="fas fa-envelope"></i> arminmersi.official@gmail.com
+    </a>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Armin Mersi
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
